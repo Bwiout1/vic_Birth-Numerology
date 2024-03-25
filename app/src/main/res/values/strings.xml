@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Birth Numerology</string>
+    <string name="my_date_of_birth_is">My date of birth is</string>
+    <string name="numeroscope">Numeroscope</string>
+    <string name="compatibility">Compatibility</string>
+    <string name="you">You</string>
+    <string name="measure_the_level_of_agreements">Measure the level of agreements</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure_want_to_exit">Are you sure,want to Exit?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="my_full_birth_name_is">My full birth name is</string>
+    <string name="next">Next</string>
+    <string name="day">Day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="partner">Partner</string>
+    <string name="what_is_your_partner_s_date_of_birth">What is your Partner’s Date of Birth</string>
+    <string name="this_compatibility_is_useful_in_love_affairs_business_ventures_and_friendship_our_calculations_are_based_on_the_life_path_number">This compatibility is useful in love affairs, business ventures and friendship. our calculations are based on the life path number.</string>
+    <string name="check_compatibility">Check compatibility</string>
+</resources>

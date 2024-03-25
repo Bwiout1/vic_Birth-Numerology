@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Birth Numerology</string>
+    <string name="my_date_of_birth_is">我的出生日期是</string>
+    <string name="numeroscope">數鏡</string>
+    <string name="compatibility">兼容性</string>
+    <string name="you">你</string>
+    <string name="measure_the_level_of_agreements">衡量協議水平</string>
+    <string name="delete">刪除</string>
+    <string name="are_you_sure_want_to_exit">你確定要退出嗎？</string>
+    <string name="yes">是</string>
+    <string name="no">沒有</string>
+    <string name="getting_started">入門</string>
+    <string name="my_full_birth_name_is">我的全名是</string>
+    <string name="next">下一步</string>
+    <string name="day">日</string>
+    <string name="month">月份</string>
+    <string name="year">年份</string>
+    <string name="partner">合作夥伴</string>
+    <string name="what_is_your_partner_s_date_of_birth">你伴侶的出生日期是什麼</string>
+    <string name="this_compatibility_is_useful_in_love_affairs_business_ventures_and_friendship_our_calculations_are_based_on_the_life_path_number">這種兼容性在愛情、商業冒險和友誼中很有用。 我們的計算是基於生命路徑數。</string>
+    <string name="check_compatibility">檢查兼容性</string>
+</resources>

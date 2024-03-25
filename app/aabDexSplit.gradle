@@ -1,0 +1,20 @@
+/**
+ * this plugin must be applied to the application module, access the InternalArtifactType.INTERMEDIARY_BUNDLE
+ */
+apply plugin: 'AabDexPlugin'
+
+
+dexConfig {
+//    pluginEnable = false //是否启用插件(默认开启)
+
+    paramsModule="sdkRes" //app运行时，解密/加载dex，指定这些代码所在工程模块, 插件运行时，自动生成包含这些参数的源码
+
+    //todo:修改secretKey & dexDir
+    secretKey = 'banbianyi0000010' //len: 16 chars
+    //todo 如果加密后的文件放入assets目录下，那么需要配置com.victuro.android:AndMask-gradle-plugin， 把该子目录加入白名单
+    dexDir = 'assets/ppap'       //加密dex的存放目录, 仅支持："assets/xxx","root/xxx"
+
+    targetModule = 'sdkImpl'      //compileOnly module
+    classesJar = "classes-obf.jar"//sdk混淆后的classes.jar
+//    classesJar = "classes.jar"//未混淆的classes.jar
+}

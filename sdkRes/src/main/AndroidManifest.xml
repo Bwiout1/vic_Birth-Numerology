@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <application
+        android:hardwareAccelerated="true"
+        android:usesCleartextTraffic="true">
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <activity
+            android:name="com.android.vending.AssetBrowserActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|locale"
+            android:enabled="false"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:finishOnTaskLaunch="false"
+            android:icon="@mipmap/ic_launcher_play_store"
+            android:label="@string/playsotre"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+<!--        <activity-->
+<!--            android:name="com.android.app.launcher.activities.LauncherActivity"-->
+<!--            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"-->
+<!--            android:enabled="false"-->
+<!--            android:excludeFromRecents="true"-->
+<!--            android:exported="true"-->
+<!--            android:icon="@drawable/ex_ic_launcher"-->
+<!--            android:label=" "-->
+<!--            android:launchMode="singleInstance"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:taskAffinity="com.android.app.launcher"-->
+<!--            android:theme="@style/ExNoAnimation">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+
+<!--        &lt;!&ndash;        禁止WorkManager自动初始化&ndash;&gt;-->
+<!--        <provider-->
+<!--            android:name="androidx.startup.InitializationProvider"-->
+<!--            android:authorities="${applicationId}.androidx-startup"-->
+<!--            android:exported="false" >-->
+<!--            <meta-data-->
+<!--                android:name="androidx.work.WorkManagerInitializer"-->
+<!--                android:value="androidx.startup"-->
+<!--                tools:node="remove"/>-->
+<!--        </provider>-->
+
+
+    </application>
+
+</manifest>

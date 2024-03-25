@@ -1,0 +1,92 @@
+plugins {
+    id 'com.android.library'
+    id 'stringfog'
+}
+
+stringfog {
+    enable true
+    implementation 'com.github.megatronking.stringfog.xor.StringFogImpl'
+}
+
+android {
+    namespace 'com.vt.depbridge'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 33
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources false
+            zipAlignEnabled true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    flavorDimensions 'promote'
+    productFlavors{
+        //appsflyer
+        af{
+            dimension = "promote"
+        }
+        //facebook
+        fb{
+            dimension = "promote"
+        }
+    }
+}
+
+dependencies {
+    //flurry
+    api 'com.flurry.android:analytics:latest.release'
+
+    //facebook
+//    2022/9/28 v15.0.0 can't pass build
+    fbApi 'com.facebook.android:facebook-android-sdk:16.0.0'
+
+    //AppMetrica
+    api 'com.yandex.android:mobmetricalib:latest.release'
+
+
+    // AppsFlyer
+    afApi 'com.appsflyer:af-android-sdk:latest.release'
+    afApi "com.android.installreferrer:installreferrer:latest.release"
+
+
+    //Fairbid, fairbid-sdk-plugin would add specific dependency
+    api "com.fyber:fairbid-sdk:3.36.0"
+
+    // Tapjoy
+//    api 'com.tapjoy:tapjoy-android-sdk:12.11.1'
+
+    // ironSource
+//    api 'com.ironsource.sdk:mediationsdk:7.2.4.1'
+
+    //mtg
+    api 'com.mbridge.msdk.oversea:newinterstitial:16.3.71'
+    api 'com.mbridge.msdk.oversea:mbnativeadvanced:16.3.71'
+    api 'com.mbridge.msdk.oversea:mbbid:16.3.71'
+
+
+    //Pangle
+    api 'com.pangle.global:ads-sdk:5.2.0.3'
+//    api 'com.google.android.gms:play-services-base:latest.release'
+    api 'com.google.android.gms:play-services-ads-identifier:latest.release'
+
+    //Glide
+    api 'com.github.bumptech.glide:glide:4.15.1'
+
+    //SharedPreferences-encrypt
+    api "androidx.security:security-crypto:1.1.0-alpha06"
+    api "androidx.work:work-runtime:2.8.1"
+
+    //StringFog
+    api 'com.github.megatronking.stringfog:xor:4.0.1'
+}

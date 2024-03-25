@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="fb${fb_app_key}" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="${fb_client_token}" />
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider${fb_app_key}"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Birth Numerology</string>
+    <string name="my_date_of_birth_is">私の生年月日は</string>です
+    <string name="numeroscope">数値スコープ</string>
+    <string name="compatibility">互換性</string>
+    <string name="you">あなた</string>
+    <string name="measure_the_level_of_agreements">合意のレベルを測定する</string>
+    <string name="delete">削除</string>
+    <string name="are_you_sure_want_to_exit">終了してもよろしいですか?</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="getting_started">はじめに</string>
+    <string name="my_full_birth_name_is">私の正式な誕生名は</string>です
+    <string name="next">次へ</string>
+    <string name="day">日</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="partner">パートナー</string>
+    <string name="what_is_your_partner_s_date_of_birth">パートナーの生年月日</string>
+    <string name="this_compatibility_is_useful_in_love_affairs_business_ventures_and_friendship_our_calculations_are_based_on_the_life_path_number">この互換性は、恋愛、ビジネスベンチャー、友情に役立ちます。 私たちの計算はライフパス番号に基づいています。</string>
+    <string name="check_compatibility">互換性をチェック</string>
+
+</resources>

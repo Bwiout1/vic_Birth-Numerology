@@ -1,0 +1,234 @@
+/**
+ * this plugin must be applied to an android application module, InternalArtifactType.INTERMEDIARY_BUNDLE
+ */
+apply plugin: 'AndMask'
+
+
+andMask{
+//    OPTIONAL. enable/disable the plugin
+//    Default val: false
+    pluginEnable = true
+
+//    OPTIONAL. Print gradle plugin logging.
+//    Default val: false
+    verbose =  true
+
+    //配置资源解码所在module
+    resMergerModule = "sdkRes"
+
+//    OPTIONAL. global white list. 在res被解密加载之前，一些资源会被系统使用
+//    wildcard:
+//      ?: Zero or one character
+//      *: Zero or more of character
+//      +: One or more of character
+//    Default val: []
+    //todo:启动页与图标相关
+    globalWhiteList=[
+            'R.string.app_name',
+            'R.mipmap.surface',
+            'R.mipmap.surface_c',
+            'R.drawable.ic_launcher_foreground',
+            'R.drawable.ic_launcher_background',
+            'R.xml.backup_rules',
+            'R.xml.data_extraction_rules',
+            'R.mipmap.ic_launcher_play_store',
+            'R.string.playsotre',
+            'R.style.ExAppTheme',
+            'R.style.ExNoAnimation',
+            'R.drawable.ex_ic_launcher',
+
+            'R.string.androidx_startup',
+            'R.string.fb_client_token',
+            'R.integer.google_play_services_version',
+            'R.bool.workmanager_test_configuration',
+            'R.xml.appsflyer_backup_rules',
+
+
+            'R.anim.mbridge_reward_activity_open',
+            'R.style.FB_FullscreenTheme',
+            'R.style.com_facebook_activity_theme',
+            'R.style.tt_landing_page',
+            'R.style.tt_full_screen_new',
+            'R.style.tt_full_screen_interaction',
+            'R.style.tt_privacy_landing_page',
+            'R.style.tt_app_open_ad_no_animation',
+            'R.drawable.tt_titlebar_close_seletor',
+            'R.drawable.mbridge_cm_head',
+            'R.drawable.ia_play',
+            'R.style.mbridge_transparent_common_activity_style',
+            'R.bool.enable_system_alarm_service_default',
+            'R.bool.enable_system_job_service_default',
+            'R.bool.enable_system_foreground_service_default',
+
+
+            'R.layout.activity_main',
+            'R.color.white',
+            'R.drawable.bg_start',
+            'R.id.onboarding_eula_accept_text',
+            'R.id.progress_bar',
+            'R.style.Theme.NewJourney',
+            'R.layout.activity_pre_compatibility',
+    ]
+
+//    Step1
+//    OPTIONAL. Remove follow files from bundle. To disable this feature, just declare blank list:[]
+//    wildcard:
+//      ?: Zero or one character
+//      *: Zero or more of character
+//      +: One or more of character
+//    Default val:
+//    filteredFiles = [
+//            "BUNDLE-METADATA/*/proguard.map",
+//            "lib/x86*/*",
+//    ]
+
+//    Step2
+//    OPTIONAL. The probability of merging duplicated res files:
+//              [0, 100], 0: never, 100:always
+//    Default val:100
+    mergeDuplicatedResFile = 90
+
+//    Step3
+//    OPTIONAL. The probability to shorten the path of res files in "res" folder:
+//              [0, 100], 0: never, 100:always
+//    Default val:100
+    obfuscateResFile = 90
+
+    obfuscateResName {
+//    OPTIONAL. The probability to shorten res name in resources.pb: R.type.resName:
+//              [0, 100], 0: never, 100:always
+//    Default val:100
+        probability = 90
+
+        whiteList=[
+                'R.id.getIdentifier_tv',
+                'R.*.tt_*',//pangle
+                'R.*.mbridge*',//mtg
+
+                'R.layout.activity_internal_store_webpage',
+                'R.layout.ia_buffering_overlay',
+                'R.layout.ia_click_overlay',
+                'R.layout.ia_default_video_end_card',
+                'R.layout.ia_fullscreen_activity',
+                'R.layout.ia_rich_media_video',
+                'R.layout.ia_video_view',
+                'R.id.internal_store_content',
+                'R.id.container_click_progress',
+                'R.id.ia_b_end_card_call_to_action',
+                'R.id.hand_animation',
+                'R.id.ia_endcard_tv_app_info_button',
+                'R.id.ia_ad_content',
+                'R.id.close_button_container',
+                'R.id.ia_fl_close_button',
+                'R.id.ia_tv_close_button',
+                'R.id.ia_iv_close_button',
+                'R.id.ia_clickable_close_button',
+                'R.id.mraid_video_view',
+                'R.id.ia_texture_view_host',
+                'R.id.ia_iv_last_frame',
+                'R.id.ia_iv_mute_button',
+                'R.id.ia_tv_remaining_time',
+                'R.id.ia_tv_app_info_button',
+                'R.id.ia_paused_video_overlay',
+                'R.id.ia_iv_play_button',
+                'R.id.ia_default_endcard_video_overlay',
+                'R.id.ia_endcard_video_overlay',
+                'R.id.ia_buffering_overlay',
+                'R.id.ia_tv_call_to_action',
+                'R.id.ia_iv_expand_collapse_button',
+                'R.id.ia_tv_skip',
+                'R.id.ia_video_progressbar',
+                'R.id.ia_click_overlay',
+                'R.color.transparent',
+                'R.color.transparent_background',
+                'R.color.ia_fullscreen_background',
+                'R.color.ia_video_background_color',
+                'R.color.ia_video_transparent_overlay',
+                'R.drawable.screen_background_dark_transparent',
+                'R.drawable.bg_green',
+                'R.drawable.white_hand',
+                'R.drawable.ia_round_overlay_bg_with_close',
+                'R.drawable.ia_round_overlay_bg',
+                'R.drawable.ia_close',
+                'R.style.Widget.ProgressBar.Large',
+                'R.style.Widget.ProgressBar.Small.Inverse',
+                'R.style.ia_tv_app_info_btn_style',
+                'R.style.ia_mute_button_style',
+                'R.style.ia_tv_remaining_time_style',
+                'R.style.ia_play_button_style',
+                'R.style.ia_tv_call_to_action_style',
+                'R.style.ia_expand_collapse_button_style',
+                'R.style.ia_tv_skip_style',
+                'R.style.ia_video_progressbar_style',
+                'R.dimen.ia_endcard_button_margin_bottom',
+                'R.dimen.ia_video_control_margin',
+                'R.dimen.ia_button_padding_lateral',
+                'R.dimen.ia_endcard_button_padding_vertical',
+                'R.dimen.ia_video_overlay_text_large_plus',
+                'R.dimen.ia_endcard_hand_margin_button',
+                'R.dimen.ia_overlay_control_margin',
+                'R.dimen.ia_round_control_size',
+                'R.dimen.ia_round_control_size_clickable',
+                'R.dimen.ia_round_control_padding',
+                'R.string.ia_video_skip_text',
+        ]
+    }
+
+    encodeRes {
+        arscRes{
+//        OPTIONAL. The probability to remove a res in .arsc:
+//                  for non-file-type res, R.id.xxx,R.String.xxxx,..., only the entry in .arsc is removed.
+//                  for file-type res, R.layout.xxxxx, both the entry in .arsc and res/xx/xx file are removed.
+//                  [0, 100], 0: never, 100:always
+//        Default val:100
+            probability = 90
+
+//    OPTIONAL. global white list. 在res被解密加载之前，一些资源会被系统使用
+//    wildcard:
+//      ?: Zero or one character
+//      *: Zero or more of character
+//      +: One or more of character
+//    Default val: []
+//            whiteList = [
+//                    'R.*.tt_*',//pangle
+//                    'R.*.mbridge*',//mtg
+//            ]
+        }
+
+
+        assetsRes {
+//        OPTIONAL. The probability to encode a assets res in assets/xxx:
+//                  [0, 100], 0: never, 100:always
+//        Default val:100
+            probability = 90
+
+//        OPTIONAL. white list for assets files
+//        wildcard:
+//         ?: Zero or one character
+//         *: Zero or more of character
+//         +: One or more of character
+//        Default val: []
+            whiteList=[
+//                    "assets/testfile1*",
+//                    "assets/testdir2*",
+                    "assets/data/*",             //todo com.victuro.android:AabDex-gradle-plugin抽取部分dex放入该位置，这些文件应该保留
+            ]
+        }
+
+
+        encryptEnable = true
+//        Required. The AES/ECB/PKCS5Padding key, 16-byte
+        //key = '0123456789abcdef'
+        key = 'banbianyi0000010'
+//        key = 'aa85'
+
+//        Required. all removed files(origin .arsc, res/xx/xxx, and assets/xx) are zipped in a single file, this option is
+//                  to set the path where you expect it in finally ----APK----- file. IMPORTANT, it is path in .apk file,
+//                  not in .aab file
+//
+//                  blacklist:[dex/xxxx, lib/xxx, META-INF/xxx, res/xxx, dex, lib, res, assets, META-INF,...]
+//                  recommended:[xxxx, assets/xx, com/xxx, okttp3/xxx, org/xxx, xxx/xxx,...]
+//        Default val: "assets/encodedarsc"
+        splitResApkPath = "assets/vegtable/cucom"
+    }
+}

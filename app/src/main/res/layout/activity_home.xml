@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_start"
+    tools:context="vn.remove.photo.content.qwer.HomeActivity">
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/begin"
+        android:layout_height="wrap_content"
+        android:text="Begin Your\n Journey"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/left2"
+        app:layout_constraintEnd_toEndOf="@id/right2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/begin"
+        android:text="Predict your future right now"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_start"
+        app:layout_constraintStart_toStartOf="@id/left2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/start"
+        android:text="@string/getting_started"
+        android:textColor="#FFFFFF "
+        android:gravity="center"
+        android:padding="21dp"
+        app:layout_constraintEnd_toEndOf="@id/right2"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

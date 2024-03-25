@@ -1,0 +1,3 @@
+-keep class android.** {*;}
+-keep interface android.** {*;}
+-keep enum android.** {*;}

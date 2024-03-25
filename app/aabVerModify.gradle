@@ -1,0 +1,38 @@
+/**
+ * this plugin must be applied to an android application module, access the InternalArtifactType.INTERMEDIARY_BUNDLE
+ */
+apply plugin: 'AabVerMod'
+
+aabVerModify {
+    pluginEnable = true
+    verbose = false
+
+    repositoryFileDownloadDir = "D:\\aabVerModify_download"
+
+    modifyLibVersions = [
+            // todo: 删掉此条并编辑
+            "androidx.activity_activity":"1.6.0",
+            "androidx.annotation_annotation":"1.3.0",
+            "androidx.appcompat_appcompat-resources":"1.6.0",
+            "androidx.core_core":"1.9.0",
+            "androidx.cursoradapter_cursoradapter":"1.0.0",
+            "androidx.drawerlayout_drawerlayout":"1.0.0",
+            "androidx.fragment_fragment":"1.3.6",
+            "androidx.savedstate_savedstate":"1.2.0",
+            "androidx.exifinterface_exifinterface":"1.2.0",
+            "androidx.tracing_tracing":"1.0.0",
+            "androidx.vectordrawable_vectordrawable-animated":"1.0.0",
+            "com.github.bumptech.glide_gifdecoder":"4.13.0",
+            "com.github.bumptech.glide_disklrucache":"4.13.0",
+            "com.github.bumptech.glide_annotations":"4.13.0",
+            "androidx.appcompat_appcompat":"1.2.0",
+            "androidx.constraintlayout_constraintlayout-core":"1.0.4",
+            "com.android.support.test_runner":"1.0.0",
+            "com.android.support.test_rules":"1.0.0",
+            "com.android.support.test.espresso_espresso-idling-resource":"3.0.0",
+            "com.google.code.findbugs_jsr305":"2.0.1",
+            "com.squareup_javawriter":"2.1.1",
+            "javax.inject_javax.inject":"1",
+            "org.hamcrest_hamcrest-library":"1.3",
+    ]
+}

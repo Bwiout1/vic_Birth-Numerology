@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Birth Numerology</string>
+    <string name="my_date_of_birth_is">Tarikh lahir saya ialah</string>
+    <string name="numeroscope">Numeroscope</string>
+    <string name="compatibility">Compatibility</string>
+    <string name="you">Anda</string>
+    <string name="measure_the_level_of_agreements">Ukur tahap perjanjian</string>
+    <string name="delete">Padam</string>
+    <string name="are_you_sure_want_to_exit">Adakah anda pasti, mahu Keluar?</string>
+    <string name="yes">YA</string>
+    <string name="no">NO</string>
+    <string name="getting_started">Bermula</string>
+    <string name="my_full_birth_name_is">Nama kelahiran penuh saya ialah</string>
+    <string name="next">Seterusnya</string>
+    <string name="day">Hari</string>
+    <string name="month">Bulan</string>
+    <string name="year">Tahun</string>
+    <string name="partner">Rakan kongsi</string>
+    <string name="what_is_your_partner_s_date_of_birth">Apakah Tarikh Lahir Rakan Kongsi anda</string>
+    <string name="this_compatibility_is_useful_in_love_affairs_business_ventures_and_friendship_our_calculations_are_based_on_the_life_path_number">Keserasian ini berguna dalam urusan cinta, usaha niaga dan persahabatan. pengiraan kami adalah berdasarkan nombor laluan hidup.</string>
+    <string name="check_compatibility">Semak keserasian</string>
+
+</resources>

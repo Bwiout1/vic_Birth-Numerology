@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+apply from: 'aabResSplit.gradle'      //资源混淆插件
+apply from: 'aabDexSplit.gradle'      //抽取部分dex插件
+apply from: 'fairbidSdkPlugin.gradle' //修改的fairbid sdk 插件
+apply from: 'aabVerModify.gradle'     //修改aab中androidx依赖库的版本号和hash
+apply from: 'zkmFullObf.gradle'   //代码混淆插件
+
+android {
+    namespace 'vn.remove.photo.content.qwer'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "vn.remove.photo.content.qwer"
+        minSdk 24
+        targetSdk 33
+        versionCode 2
+        versionName "2.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        resConfigs ("en", "de", "es", "fr", "in", "ja", "ko", "ms", "pt", "th", "zh-rTW")
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('./64b60608d21e9.jks')
+            storePassword '64b60608d21e9'
+            keyAlias 'key0'
+            keyPassword '64b60608d21e9'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources false
+            zipAlignEnabled true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
+
+            ndk {
+                abiFilters 'armeabi-v7a', 'arm64-v8a'
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    flavorDimensions 'promote'
+    productFlavors{
+        //appsflyer
+        af{
+            dimension = "promote"
+        }
+        //facebook
+        fb{
+            dimension = "promote"
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    implementation project(path: ':sdkRes')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

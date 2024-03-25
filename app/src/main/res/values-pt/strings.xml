@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Birth Numerology</string>
+    <string name="my_date_of_birth_is">Minha data de nascimento é</string>
+    <string name="numeroscope">Numeroscope</string>
+    <string name="compatibility">Compatibilidade</string>
+    <string name="you">Você</string>
+    <string name="measure_the_level_of_agreements">Meça o nível de acordos</string>
+    <string name="delete">Excluir</string>
+    <string name="are_you_sure_want_to_exit">Tem certeza que deseja sair?</string>
+    <string name="yes">SIM</string>
+    <string name="no">NÃO</string>
+    <string name="getting_started">Primeiros passos</string>
+    <string name="my_full_birth_name_is">Meu nome de nascimento completo é</string>
+    <string name="next">Próximo</string>
+    <string name="day">Dia</string>
+    <string name="month">Mês</string>
+    <string name="year">Ano</string>
+    <string name="partner">Parceiro</string>
+    <string name="what_is_your_partner_s_date_of_birth">Qual é a data de nascimento do seu parceiro</string>
+    <string name="this_compatibility_is_useful_in_love_affairs_business_ventures_and_friendship_our_calculations_are_based_on_the_life_path_number">Esta compatibilidade é útil em casos amorosos, negócios e amizades. nossos cálculos são baseados no número do caminho de vida.</string>
+    <string name="check_compatibility">Verificar compatibilidade</string>
+</resources>

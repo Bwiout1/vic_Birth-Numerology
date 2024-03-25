@@ -1,0 +1,75 @@
+//本插件只应用于application, 可将所有代码(最后打包的工程代码，第三方库，甚至compileOnly库）均统一混淆
+apply plugin: 'com.vt.zkm-full-obf'
+
+zkmFullPlugin{
+    pluginEnable = true
+
+    compileOnlyLib{
+        lib = "sdkImpl" //module名字
+        obfuscate = true
+    }
+
+    classPathCls = [
+            "com/fyber",
+            "com/digitalturbine",
+            "com/ironsource",
+            "com/adcolony",
+            "com/is",
+            "com/mbridge",
+            "com/apm",
+            "com/bytedance",
+            "com/pgl",
+            "com/com/bytedance",
+            "com/bykv",
+            "com/iab",
+            "ms/bd",
+            "com/flurry",
+            "com/facebook",
+            "com/appsflyer",
+            "kotlin",
+            "android",
+            "com/bumptech",
+            "com/google",
+            "com/yandex",
+            "com/android",
+            "okhttp3",
+    ] //本项不在zkm的配置文档中，当某个class总是不能找到时，可以把该class的路径配置到此处，plugin把匹配的class归档成独立的jar，并作为classpath
+
+
+    //for configuration format， refer to https://zelix.com/klassmaster/docs/langZKMScript.html for details
+    exclude = [
+            'com.android.vending.',
+            'com.android.app.launcher.activities.',
+            'com.vt.sdk.* create(*)',
+
+            //todo: 修改下面三行
+            'vn.remove.photo.content.qwer.', //修改为app模块下,自己代码的路径
+            'vn.remove.photo.content.qwer.AppEx', //修改为自己的Application
+            'com.DCT.', //修改为Manifest中,com.product.SunriseActivity类的路径
+    ]
+
+    unexclude = [
+            'com.vt.sdk.PopupCoreActivity'
+    ]
+
+    obfuscateFlowExclude = [
+            'com.vt.sdk.* create(*)',
+    ]
+
+    obfuscateReferencesExclude = [
+            'android.support.*',
+            'androidx.*',
+            'kotlin*',
+            'kotlin.*',
+            'com.google.*',
+            'com.android.*',
+            'org.*',
+    ]
+
+    obfuscateExtra=[
+//        'encryptStringLiterals=none',       //disable string encryption  ("none" | "normal" | "aggressive" | "flowObfuscate" | "enhanced")
+        'obfuscateFlow=aggressive',         //could be omitted. Default is light
+        'methodParameters=obfuscate',       //could be omitted. Default is keepVisible
+        'randomize=true',                   //could be omitted. Default is false
+    ]
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Birth Numerology</string>
+    <string name="my_date_of_birth_is">Tanggal lahir saya</string>
+    <string name="numeroscope">Numeroscope</string>
+    <string name="compatibility">Kompatibilitas</string>
+    <string name="you">Kamu</string>
+    <string name="measure_the_level_of_agreements">Mengukur tingkat kesepakatan</string>
+    <string name="delete">Hapus</string>
+    <string name="are_you_sure_want_to_exit">Apakah Anda yakin ingin Keluar?</string>
+    <string name="yes">YA</string>
+    <string name="no">TIDAK</string>
+    <string name="getting_started">Memulai</string>
+    <string name="my_full_birth_name_is">Nama lahir lengkap saya adalah</string>
+    <string name="next">Selanjutnya</string>
+    <string name="day">Hari</string>
+    <string name="month">Bulan</string>
+    <string name="year">Tahun</string>
+    <string name="partner">Mitra</string>
+    <string name="what_is_your_partner_s_date_of_birth">Berapa Tanggal Lahir Mitra Anda</string>
+    <string name="this_compatibility_is_useful_in_love_affairs_business_ventures_and_friendship_our_calculations_are_based_on_the_life_path_number">Kompatibilitas ini berguna dalam urusan cinta, usaha bisnis, dan persahabatan. perhitungan kami didasarkan pada nomor jalur kehidupan.</string>
+    <string name="check_compatibility">Periksa kompatibilitas</string>
+</resources>

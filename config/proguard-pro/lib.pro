@@ -1,0 +1,7 @@
+-keep class java.lang.**{*;}
+-keep class kotlin.**{*;}
+-keep class java.util.**{*;}
+-keep class java.text.SimpleDateFormat{*;}
+-keep class com.bytedance.**{*;}
+-keep class com.bumptech.glide.**{*;}
+-keep class org.json.**{*;}

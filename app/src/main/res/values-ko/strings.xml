@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Birth Numerology</string>
+    <string name="my_date_of_birth_is">내 생년월일은</string>
+    <string name="numeroscope">누메로스코프</string>
+    <string name="compatibility">호환성</string>
+    <string name="you">귀하</string>
+    <string name="measure_the_level_of_agreements">합의 수준 측정</string>
+    <string name="delete">삭제</string>
+    <string name="are_you_sure_want_to_exit">정말 종료하시겠습니까?</string>
+    <string name="yes">예</string>
+    <string name="no">아니요</string>
+    <string name="getting_started">시작하기</string>
+    <string name="my_full_birth_name_is">내 이름은</string>
+    <string name="next">다음</string>
+    <string name="day">요일</string>
+    <string name="month">월</string>
+    <string name="year">연도</string>
+    <string name="partner">파트너</string>
+    <string name="what_is_your_partner_s_date_of_birth">파트너의 생년월일</string>
+    <string name="this_compatibility_is_useful_in_love_affairs_business_ventures_and_friendship_our_calculations_are_based_on_the_life_path_number">이 호환성은 연애, 사업 벤처 및 우정에 유용합니다. 우리의 계산은 삶의 경로 번호를 기반으로 합니다.</string>
+    <string name="check_compatibility">호환성 확인</string>
+</resources>

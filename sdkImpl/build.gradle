@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.library'
+    id 'stringfog'
+}
+
+stringfog {
+    enable true
+    implementation 'com.github.megatronking.stringfog.xor.StringFogImpl'
+}
+
+android {
+    namespace 'com.vt.sdk'
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 23
+        targetSdk 33
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources false
+            zipAlignEnabled true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    flavorDimensions 'promote'
+    productFlavors{
+        //appsflyer
+        af{
+            dimension = "promote"
+        }
+        //facebook
+        fb{
+            dimension = "promote"
+        }
+    }
+}
+
+dependencies {
+    compileOnly project(path: ':depBridge')
+}

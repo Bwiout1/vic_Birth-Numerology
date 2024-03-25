@@ -1,0 +1,31 @@
+/**
+ * this plugin must be applied to an android application module, the lite ver call variant.instrumentation.transformClassesWith
+ */
+//apply plugin: 'com.fyber.fairbid-sdk-plugin' //this is official ver
+apply plugin: 'com.vt.fairbid-sdk-plugin-lite'
+apply plugin: 'check-plugin'
+
+fairbid_mediation{
+//    applovin = true //当前版本不支持
+//    ironsource = true //当前版本不支持
+    mtg = true
+//    pangle = true //当前版本不支持
+//    unity = true //当前版本不支持
+//    vungle = true //当前版本不支持
+}
+
+checkPlugin{
+//    mainModule = "app" //默认为app
+
+//    dictEnable = false //默认为true
+
+//    dictPath = "config/proguard-dict.txt" //相对于rootProject
+
+//    checkEnable = false //默认为true
+
+//    resModule = "app" //默认为app
+
+    dexModule = "app" //默认为DexEncrypt-core
+
+    dexPlugin = "AabDex-gradle-plugin" //t20:aab-encrypt-plugin, t22:AabDex-gradle-plugin
+}

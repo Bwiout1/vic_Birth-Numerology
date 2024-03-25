@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Birth Numerology</string>
+    <string name="my_date_of_birth_is">วันเกิดของฉันคือ</string>
+    <string name="numeroscope">Numeroscope</string>
+    <string name="compatibility">ความเข้ากันได้</string>
+    <string name="you">คุณ</string>
+    <string name="measure_the_level_of_agreements">วัดระดับข้อตกลง</string>
+    <string name="delete">ลบ</string>
+    <string name="are_you_sure_want_to_exit">แน่ใจหรือว่าต้องการออก?</string>
+    <string name="yes">ใช่</string>
+    <string name="no">ไม่</string>
+    <string name="getting_started">เริ่มต้น</string>
+    <string name="my_full_birth_name_is">ชื่อเต็มของฉันคือ</string>
+    <string name="next">ถัดไป</string>
+    <string name="day">วัน</string>
+    <string name="month">เดือน</string>
+    <string name="year">ปี</string>
+    <string name="partner">พันธมิตร</string>
+    <string name="what_is_your_partner_s_date_of_birth">แฟนคุณเกิดวันที่เท่าไหร่</string>
+    <string name="this_compatibility_is_useful_in_love_affairs_business_ventures_and_friendship_our_calculations_are_based_on_the_life_path_number">ความเข้ากันได้นี้มีประโยชน์ในเรื่องความรัก การทำธุรกิจ และมิตรภาพ การคำนวณของเราขึ้นอยู่กับหมายเลขเส้นทางชีวิต</string>
+    <string name="check_compatibility">ตรวจสอบความเข้ากันได้</string>
+</resources>

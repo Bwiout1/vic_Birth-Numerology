@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="vn.remove.photo.content.qwer.Descripition.YearPredit">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/num_year_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="16dp"
+
+            app:srcCompat="@drawable/forward_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Numeroscope"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/num_year_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#B3FFFFFF"
+            android:layout_marginBottom="5dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/org_shape">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="14dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="65dp"
+                    android:background="@drawable/circle">
+
+                    <TextView
+                        android:id="@+id/num_year_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="14dp"
+                        android:text="h"
+                        android:textColor="@color/white"
+
+                        android:textSize="12sp" />
+
+                    <ProgressBar
+                        android:id="@+id/pro4"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:max="10"
+                        android:progressDrawable="@drawable/progressbar" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="65dp"
+                    android:background="@drawable/circle">
+
+                    <TextView
+                        android:id="@+id/num_year_mon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="14dp"
+                        android:text="h"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ProgressBar
+                        android:id="@+id/pro5"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:max="10"
+                        android:progressDrawable="@drawable/progressbar"
+
+                        />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:background="@drawable/circle">
+
+                    <TextView
+                        android:id="@+id/num_year_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="14dp"
+                        android:text="h"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ProgressBar
+                        android:id="@+id/pro6"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:max="10"
+                        android:progress="10"
+                        android:progressDrawable="@drawable/progressbar"
+                        />
+                </FrameLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="22dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Day"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Month"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:padding="4dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Year"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:padding="4dp"/>
+
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/num_year_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabTextColor="#FFFFFF"
+                app:tabSelectedTextColor="@color/white"
+                android:background="@drawable/tab"
+                app:tabIndicatorHeight="50dp"
+                app:tabIndicatorColor="#2C6F91"
+                app:tabIndicatorFullWidth="true"
+                android:padding="5dp"
+                app:tabIndicator="@drawable/cur_cor"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/num_year_viewpager"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
